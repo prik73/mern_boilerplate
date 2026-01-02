@@ -75,7 +75,7 @@ No part of the codebase is tightly coupled to business-specific logic.
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/mern-auth-boilerplate.git
+git clone https://github.com/Saarthak1234/mern-auth-boilerplate.git
 cd mern-auth-boilerplate
 ```
 
@@ -98,6 +98,8 @@ npm run dev
 ### Environment Variables
 
 Create a .env file inside the server directory and configure the following variables:
+Google OAuth: https://console.cloud.google.com/apis/credentials
+github: https://github.com/settings/developers
 
 ```
 PORT=5000
@@ -115,6 +117,7 @@ GOOGLE_CLIENT_SECRET=
 GOOGLE_CALLBACK_URL=
 
 # Session
+# note to self:use openssl rand -hex 64
 SESSION_SECRET=secret_session_key
 
 # Email (Nodemailer)
